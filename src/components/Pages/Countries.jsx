@@ -47,12 +47,12 @@ const Countries = () => {
           {filteredCountries.map((country, index) => (
             <div
               key={index}
-              className={`flex flex-col max-w-[250px] ${theme.bgCard} rounded-lg transition-all ${theme.hoverOpts} cursor-pointer shadow-lg`}
+              className={`flex flex-col sm:max-w-[250px] max-sm:w-full ${theme.bgCard} rounded-lg transition-all ${theme.hoverOpts} cursor-pointer shadow-lg`}
               onClick={() => handleCountryDetails(country)}
             >
               <img
                 src={country.flags.svg}
-                className="w-full h-[150px] object-cover rounded-t-lg"
+                className="w-full h-[150px] max-sm:h-[200px] object-cover rounded-t-lg"
               />
               <div className="flex flex-col gap-4 px-5 py-7">
                 <h1 className={`text-base font-bold ${theme.textColor}`}>
